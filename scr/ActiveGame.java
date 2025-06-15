@@ -18,6 +18,7 @@ public class ActiveGame extends ArcadeGame{
     public String toString(){
         return super.toString() + " / the min age is "+ minAge;
     }
+    //calculates price based on if it is peak or not 
 
     @Override
     public int calculatePrice(boolean peak) {
