@@ -2,7 +2,7 @@ public class ActiveGame extends ArcadeGame{
     protected int minAge = -1;
     public ActiveGame(String Pname, String PgameID, int PpricePerPlay,int PminAge) throws InvalidGameIdExecption {
         super(Pname,PgameID,PpricePerPlay) ;
-
+        // checks the game id so that the right starting letter to go with the right game type
         if (PgameID.startsWith("A")) {
             this.minAge = PminAge;
         }
